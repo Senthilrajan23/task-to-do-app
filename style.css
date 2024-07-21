@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --primary-color:rgb(206, 189, 229);
+}
+
+.darkTheme{
+  --primary-color: rgb(36, 5, 60) ;
+}
+
+#themeIcon{
+  cursor: pointer;
+  
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.NewTask-mobile-only-modal-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px 10px;
+  background: rgb(255, 255, 255);
+
+  z-index: 3;
+}
+
+@media only screen and (min-width: 660px) {
+  .NewTask-mobile-only-modal-button {
+    display: none;
+  }
+}
+
+.cards_styles {
+  justify-content: center;
+  align-items: center;
+}
